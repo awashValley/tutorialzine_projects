@@ -1,7 +1,7 @@
 <?php
 
 require "connect.php";
-require "todo.class.php";
+require "todo_class.php";
 
 
 $id = (int)$_GET['id'];
@@ -13,15 +13,15 @@ try{
 		case 'delete':
 			ToDo::delete($id);
 			break;
-			
+
 		case 'rearrange':
 			ToDo::rearrange($_GET['positions']);
 			break;
-			
+
 		case 'edit':
 			ToDo::edit($id,$_GET['text']);
 			break;
-			
+
 		case 'new':
 			ToDo::createNew($_GET['text']);
 			break;

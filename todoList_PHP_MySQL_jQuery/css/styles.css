@@ -30,9 +30,9 @@ ul.todoList li{
 	cursor:n-resize;
 
 	/* CSS3 text shadow and rounded corners: */
-	
+
 	text-shadow:1px 1px 0 white;
-	
+
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
@@ -40,7 +40,7 @@ ul.todoList li{
 
 ul.todoList li:hover{
 	border-color:#9be0f9;
-	
+
 	/* CSS3 glow effect: */
 	-moz-box-shadow:0 0 5px #A6E5FD;
 	-webkit-box-shadow:0 0 5px #A6E5FD;
@@ -53,7 +53,7 @@ ul.todoList li:hover{
 }
 
 /* The edit and delete buttons */
-	
+
 .todo .actions{
 	position:absolute;
 	right:7px;
@@ -138,7 +138,7 @@ a.green-button:visited{
 	padding:6px 5px 4px;
 	text-align:center;
 	width:60px;
-	
+
 	text-shadow:1px 1px 1px #DDDDDD;
 	background:url("img/button_green.png") no-repeat left top;
 }
@@ -174,7 +174,7 @@ h2{
 	font-size:14px;
 	font-weight:normal;
 	text-align:center;
-	
+
 	position:absolute;
 	right:40px;
 	top:40px;

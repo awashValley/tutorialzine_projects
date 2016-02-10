@@ -1,7 +1,8 @@
 <?php
+error_reporting(0);
 
-require "connect.php";
-require "todo.class.php";
+require "db/connect.php";
+require "todo_class.php";
 
 
 // Select all the todos, ordered by position:
@@ -27,7 +28,7 @@ while($row = mysql_fetch_assoc($query)){
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/humanity/jquery-ui.css" type="text/css" media="all" />
 
 <!-- Our own stylesheet -->
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
 </head>
 
@@ -39,16 +40,16 @@ while($row = mysql_fetch_assoc($query)){
 <div id="main">
 
 	<ul class="todoList">
-		
+
         <?php
-		
+
 		// Looping and outputting the $todos array. The __toString() method
 		// is used internally to convert the objects to strings:
-		
+
 		foreach($todos as $item){
 			echo $item;
 		}
-		
+
 		?>
 
     </ul>
